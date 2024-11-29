@@ -19,10 +19,10 @@ public class Robot extends TimedRobot {
    * This function is run when the robot is first started up and should be used for any
    * initialization code.
    */
-  private Spark leftmotor1 = new Spark(0);
-  private Spark Leftmotor2 = new Spark(1);
-  private Spark rightmotor1 = new Spark(2);
-  private Spark rightmotor2 = new Spark(3);
+  private CANSparkMax leftmotor1 = new CANSparkMax(0, MotorType.kbrushless);
+  private CANSparkMax Leftmotor2 = new CANSparkMax(1, MotorType.kbrushless);
+  private CANSparkMax rightmotor1 = new CANSparkMax(2, MotorType.kbrushless);
+  private CANSparkMax rightmotor2 = new CANSparkMax(3, MotorType.kbrushless);
 
   private Joystick joy1 = new Joystick(0);
   @Override
